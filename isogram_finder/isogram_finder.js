@@ -3,11 +3,11 @@ const IsogramFinder = function (word) {
 }
 
 IsogramFinder.prototype.isIsogram = function () {
-  let array_word= this.word.split('');
+  let arrayWord= this.word.split('');
   let counts = {};
 
-  for (let i = 0; i < array_word.length; i++) {
-    let letter = array_word[i];
+  for (let i = 0; i < arrayWord.length; i++) {
+    let letter = arrayWord[i];
     counts[letter] = counts[letter] ? counts[letter] + 1 : 1;
     if (counts[letter] > 1) {
       return false;
